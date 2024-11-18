@@ -10,6 +10,7 @@
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: #fafafa;
+            line-height: 1.6;
         }
 
         nav {
@@ -44,6 +45,79 @@
             margin: 0 auto;
             padding: 2rem;
         }
+
+        .about-header {
+            text-align: center;
+            padding: 3rem 0;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid #eee;
+        }
+
+        .about-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .about-header p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            padding: 2rem 0;
+        }
+
+        .about-section {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .about-section h2 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .about-section p {
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 1.5rem;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 1.1rem;
+        }
     </style>
 </head>
 <body>
@@ -56,9 +130,39 @@
     </nav>
 
     <div class="container">
-        <h1>About Us</h1>
-        <p>At Web LLC, we specialize in creating stunning, functional websites for both personal and business use. Our team of dedicated developers and designers work tirelessly to bring your digital vision to life. With years of experience in web development, we understand that each client has unique needs and requirements.</p>
-        <p>We pride ourselves on delivering websites that not only look beautiful but also perform exceptionally well. Whether you're a small business owner looking to establish your online presence or an individual wanting to share your passion with the world, we have the expertise to help you succeed in the digital space.</p>
+        <div class="about-header">
+            <h1>About Web LLC</h1>
+            <p>Creating exceptional digital experiences through innovative web solutions</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-section">
+                <h2>Our Story</h2>
+                <p>At Web LLC, we specialize in creating stunning, functional websites for both personal and business use. Our team of dedicated developers and designers work tirelessly to bring your digital vision to life.</p>
+                <p>With years of experience in web development, we understand that each client has unique needs and requirements. Our approach combines creativity with technical expertise to deliver solutions that exceed expectations.</p>
+            </div>
+
+            <div class="about-section">
+                <h2>Our Approach</h2>
+                <p>We pride ourselves on delivering websites that not only look beautiful but also perform exceptionally well. Whether you're a small business owner looking to establish your online presence or an individual wanting to share your passion with the world, we have the expertise to help you succeed in the digital space.</p>
+                <p>Our development process focuses on user experience, performance, and security, ensuring your website stands out in today's competitive digital landscape.</p>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
